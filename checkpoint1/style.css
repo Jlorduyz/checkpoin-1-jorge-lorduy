@@ -1,0 +1,144 @@
+:root {
+  font-size: 12px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 600;
+}
+.mainclass {
+  min-height: 86vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.596),
+      rgba(255, 255, 255, 0.904)
+    ),
+    url(./images/image-1.jpg);
+  align-items: center;
+}
+.header {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  min-height: 4vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+}
+.navbar a {
+  color: white;
+  padding: 3px;
+}
+.navbar a[href="#"] {
+  border: 1px solid red;
+  background-color: red;
+  border-radius: 30px;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+h1 {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 600;
+}
+span {
+  color: red;
+}
+.imgbanner {
+  width: 100vw;
+  height: 160px;
+  object-fit: cover;
+}
+h2 {
+  background-color: rgba(0, 0, 0, 0.199);
+  width: 100vw;
+  text-align: center;
+}
+.texttop {
+  padding: 30px;
+}
+.lugar {
+  width: 300px;
+}
+.lugares p {
+  position: absolute;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.514);
+}
+.travels {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+.textbot {
+  text-align: center;
+}
+.datos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 30px 0px;
+}
+.lista {
+  padding: 20px 10px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.39);
+}
+.lista li {
+  color: white;
+}
+table,
+tr,
+td,
+th {
+  border: 1px black solid;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.226);
+  color: white;
+}
+th {
+  width: 100px;
+}
+tr {
+  height: 40px;
+}
+table caption {
+  background-color: black;
+  color: white;
+}
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+}
+footer p,
+form {
+  color: white;
+}
+@media (min-width: 768px) {
+  .lugar {
+    width: 200px;
+  }
+  .lugares p {
+    width: 200px;
+  }
+  .travels {
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+}
